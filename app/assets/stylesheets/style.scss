@@ -1,0 +1,27 @@
+html,body{
+  height: 100%;
+  margin: 0;
+}
+.full-height{
+  height: 100%;
+}
+.no-margin{
+  margin: 0;
+}
+.big-padding{
+  padding:2em 1.5em;
+}
+.main-background{
+  background-image: url(#{asset_path('landing.jpeg')});
+  background-size: cover;
+  background-repeat: none;
+}
+.top-space{
+  margin-top:1em;
+}
+.underline{
+  text-decoration: underline;
+}
+.text-left{
+  text-align: left;
+}

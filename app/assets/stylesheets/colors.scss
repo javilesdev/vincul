@@ -1,0 +1,30 @@
+$colors : (
+  primary: rgb(103,58,183),
+  accent: rgb(0,188,212),
+  red: #F44336,
+  pink: #E91E63,
+  blue: #1976D2,
+  dark-blue: #2C3E50,
+  grey: #D7DADB,
+  dark-grey: #666,
+  light-blue: #03A9F4,
+  white: #fff,
+  indigo: #2F33AC,
+  purple: #9C27B0,
+  yellow: #FFEB3B,
+  amber: #FFC107,
+  orange: #FF9800,
+  deep-orange: #FF9800,
+  green: #4CAF50,
+  teal: #009688,
+  black: #000
+);
+
+@each $color_name, $color in $colors{
+  .#{$color-name}{
+    background-color: $color;
+  }
+  .#{$color_name}-text{
+    color: $color;
+  }
+}
