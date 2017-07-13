@@ -1,10 +1,10 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
+  layout :set_layout
 
-  def home
-    
-  end
-  def main
-    
-  end
+  protected
+    def set_layout
+      "application"
+    end
+
 end

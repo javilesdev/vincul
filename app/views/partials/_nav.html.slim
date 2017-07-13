@@ -1,0 +1,14 @@
+header.mdl-layout__header.mdl-layout__header--scroll
+  .mdl-layout__header-row
+    span.mdl-layout-title.brand Vincul
+    .mdl-layout-spacer
+    nav.mdl-navigation
+      - if user_signed_in?
+        = link_to "Cerrar sesión", destroy_user_session_path, method: :delete
+.mdl-layout__drawer
+  span.mdl-layout-title Title
+  nav.mdl-navigation
+    a.mdl-navigation__link href=""  Link
+    a.mdl-navigation__link href=""  Link
+    a.mdl-navigation__link href=""  Link
+    a.mdl-navigation__link href=""  Link
