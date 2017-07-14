@@ -1,5 +1,14 @@
-h1 Hello my brothers...
-- if user_signed_in?
-	= link_to "Cerrar sesión", destroy_user_session_path, method: :delete
-button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-button--accent
-  | Button
+.top-space
+	.row.center-xs
+		= grid xs:8, md:10 do
+		 .row
+		 	.col-lg-2.col-sm-3.col-xs-10
+				ul.remove-bullet-points.text-left
+					li
+						= link_to "Explorar", "#"
+					li
+						= link_to "Sugerencias", "#"
+			.white.large-padding.col-xs.mdl-shadow--2dp
+				= render "posts/form"
+				ul.posts-list.mdl-list#posts
+					= render @posts

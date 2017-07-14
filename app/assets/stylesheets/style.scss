@@ -2,12 +2,23 @@ html,body{
   height: 100%;
   margin: 0;
 }
-
+body{
+  background-color: #eee;
+}
+.full-width{
+  width: 100%;
+}
 .full-height{
   height: 100%;
 }
 .no-margin{
   margin: 0;
+}
+.medium{
+  font-size: 1.2em;
+}
+.large-padding{
+   padding: 10px 15px;
 }
 .big-padding{
   padding:2em 1.5em;
@@ -25,4 +36,11 @@ html,body{
 }
 .text-left{
   text-align: left;
+}
+.text-right{
+  text-align: right;
+}
+.remove-bullet-points{
+  list-style-type: none;
+  margin:0;
 }
